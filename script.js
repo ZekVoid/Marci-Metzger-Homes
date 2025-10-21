@@ -1,8 +1,9 @@
 window.addEventListener('scroll', function() {
     const nav = document.getElementById('mainNav');
+
     if (window.scrollY > 50) {
-        nav.style.background = '#222';
+        nav.classList.add('scrolled');
     } else {
-        nav.style.background = 'transparent';
+        nav.classList.remove('scrolled');
     }
 });
