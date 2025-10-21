@@ -304,10 +304,42 @@ body {
 
 /*  */
 
+.partners {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    background: #ffffff;
+}
+
+.partners-title {
+    font-family: var(--font-heading);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(171, 133, 133);
+    margin: 0;
+    padding-top: 20px;
+}
+
+.partners-track img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* vertical center */
+    transition: transform 0.3s ease;
+}
+
+.partners-track img:hover {
+    transform: translateY(-50%) scale(1.15);
+    /* preserve vertical center */
+}
+
+/*  */
+
 .contact-section {
     padding: 60px 20px;
     max-width: 1400px;
-    /* Increase max-width to use more space */
     margin: 0 auto;
     font-family: var(--font-body);
 }
@@ -329,7 +361,6 @@ body {
 .contact-form,
 .contact-info {
     flex: 1 1 45%;
-    /* Each column takes ~45% */
     min-width: 300px;
 }
 
