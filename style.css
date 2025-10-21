@@ -29,7 +29,7 @@ body {
 .media-section .overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 0;
 }
 
@@ -68,17 +68,6 @@ body {
     margin: 10px 0 0;
 }
 
-.hero-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    z-index: 2;
-    font-family: var(--font-heading);
-}
-
 .navbar-container {
     position: absolute;
     top: 0;
@@ -114,8 +103,8 @@ body {
 
 .navbar-container.scrolled {
     position: fixed;
-    background: #222;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.);
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     z-index: 20;
 }
 
@@ -198,7 +187,8 @@ body {
 
 .contact-section {
     padding: 60px 20px;
-    max-width: 1400px; /* Increase max-width to use more space */
+    max-width: 1400px;
+    /* Increase max-width to use more space */
     margin: 0 auto;
     font-family: var(--font-body);
 }
@@ -219,8 +209,9 @@ body {
 
 .contact-form,
 .contact-info {
-    flex: 1 1 45%; /* Each column takes ~45% */
-    min-width: 300px; 
+    flex: 1 1 45%;
+    /* Each column takes ~45% */
+    min-width: 300px;
 }
 
 .contact-form h3 {
@@ -257,8 +248,8 @@ body {
 }
 
 .contact-info {
-    padding-left: 50px;  
-    padding-right: 10px; 
+    padding-left: 50px;
+    padding-right: 10px;
 }
 
 .whatsapp-btn {
@@ -292,8 +283,8 @@ body {
 .map-container {
     width: 100%;
     max-width: 1200px;
-    margin: 0;     
-    height: 500px;  
+    margin: 0;
+    height: 500px;
 }
 
 .map-container iframe {
