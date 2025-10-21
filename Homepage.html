@@ -12,28 +12,84 @@
 
 <body>
 
-    <div id="mainNav" class="navbar-container">
-        <nav>
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">LISTINGS</a></li>
-                <li><a href="#services">LET'S MOVE</a></li>
-                <li><a href="#contact">ABOUT US</a></li>
-            </ul>
-        </nav>
+    <!-- Media Section -->
+
+    <div class="media-section">
+        <div id="mainNav" class="navbar-container">
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">LISTINGS</a></li>
+                    <li><a href="#services">LET'S MOVE</a></li>
+                    <li><a href="#contact">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <img src="Marci Metzger Assets/icon.webp" alt="Marci Metzger Homes Logo" class="site-logo">
+
+        <div class="media-title">
+            <h1>MARCI METZGER - THE RIDGE REALTY GROUP</h1>
+            <p>Pahrump Realtor</p>
+        </div>
+
+        <div class="overlay"></div>
+
     </div>
 
-    <section class="hero-section" id="home">
-        <img src="your-image.jpg" alt="Beautiful home exterior" class="hero-image">
+    <section class="contact-section">
+        <h2 class="contact-title">Call or Visit</h2>
+        <div class="contact-container">
+
+            <div class="contact-form">
+                <h3>Send Message</h3>
+                <form>
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email*" required>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+                <p class="recaptcha-note">
+                    This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+                </p>
+            </div>
+
+            <div class="contact-info">
+                <a class="whatsapp-btn" href="https://wa.me/12069196886" target="_blank">
+                    Message us on WhatsApp
+                </a>
+                <p><strong>Marci Metzger - THE RIDGE REALTY GROUP</strong></p>
+                <p>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                <p>(206) 919-6886</p>
+
+                <h4>Office Hours</h4>
+                <p>Open today 08:00 am – 07:00 pm</p>
+                <p>Open daily 08:00 am – 07:00 pm</p>
+                <p>Appointments outside office hours available upon request. Just call!</p>
+            </div>
+
+        </div>
     </section>
+
+    <!-- Map Section -->
 
     <div class="map-container" id="map" aria-label="Map showing 3190 HW-160, Suite F, Pahrump, NV 89048">
         <iframe src="https://www.google.com/maps?q=3190+HW-160+Suite+F+Pahrump+NV+89048&output=embed" loading="lazy"
             allowfullscreen referrerpolicy="no-referrer-when-downgrade"
             title="Map — 3190 HW-160, Suite F, Pahrump, NV 89048">
-
         </iframe>
     </div>
+
+    <!-- Footer Section -->
+
+    <footer class="site-footer">
+        <p>Copyright © 2023 Marci METZGER Homes - All Rights Reserved</p>
+    </footer>
+
+    <a class="btn" href="tel:+2069196886">
+        <span class="btn-text-one">Call Now</span>
+        <span class="btn-text-two">(206)-919-6886</span>
+    </a>
 
     <script src="script.js"></script>
 
