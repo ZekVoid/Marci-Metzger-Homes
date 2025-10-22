@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>Marci Metzger Homes</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Spectral:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
@@ -50,7 +51,9 @@
                 relationships through trust and transparency, leveraging her deep market understanding and negotiation
                 skills to ensure a smooth, rewarding journey and establish herself as your ideal real estate partner.
             </p>
-            <button class="intro-btn" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get in touch with Marci</button>
+            <button class="intro-btn"
+                onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Get in touch with
+                Marci</button>
         </div>
         <div class="intro-image">
             <img src="Marci Metzger Assets/Marci.png" alt="Intro Image">
@@ -96,13 +99,10 @@
         </div>
     </div>
 
-    <!-- Listing Section -->
-
-
     <!-- Partnership Section -->
 
     <div class="partners">
-        <h1 class="partners-title">Partnerships</h1>
+        <h1 class="partners-title">Our Affiliations</h1>
         <div class="partners-track">
             <img src="Marci Metzger Assets/p1.webp" alt="Partner 1">
             <img src="Marci Metzger Assets/p2.webp" alt="Partner 2">
@@ -110,57 +110,255 @@
             <img src="Marci Metzger Assets/p4.webp" alt="Partner 4">
         </div>
     </div>
-    <!-- Contact Section -->
+
+    <!-- Gallery Section -->
+
+    <div class="gallery-section">
+        <h1 class="gallery-header">Photo Gallery</h1>
+        <div class="gallery-left">
+            <img id="main-img" src="Marci Metzger Assets/g1.webp" alt="Main Property Image">
+
+            <div class="thumbnails-right">
+                <img src="Marci Metzger Assets/g1.webp" alt="Property 1">
+                <img src="Marci Metzger Assets/g2.webp" alt="Property 2">
+                <img src="Marci Metzger Assets/g3.webp" alt="Property 3">
+                <img src="Marci Metzger Assets/g4.webp" alt="Property 4">
+                <img src="Marci Metzger Assets/g5.webp" alt="Property 5">
+                <img src="Marci Metzger Assets/g6.webp" alt="Property 6">
+                <img src="Marci Metzger Assets/g7.webp" alt="Property 7">
+            </div>
+        </div>
+    </div>
+
+    <!-- Listing Section -->
+
+    <div class="property-filter-wrapper">
+        <h1 class="wrapper-header">Find Your Dream Home</h1>
+        <div class="property-filter-form">
+            <h1 class="filter-header">Search Listings</h1>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select id="location" class="filter-dropdown">
+                        <option value="">Select Location</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <select id="type" class="filter-dropdown">
+                        <option value="">Select Type</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="sort">Sort By</label>
+                    <select id="sort" class="filter-dropdown sort-by">
+                        <option value="">Newest</option>
+                        <option value="">Oldest</option>
+                        <option value="">Least Expensive To Most</option>
+                        <option value="">Most Expensive To Least</option>
+                        <option value="">Bedrooms (Low to High)</option>
+                        <option value="">Bedrooms (High to Low)</option>
+                        <option value="">Bathrooms (Low to High)</option>
+                        <option value="">Bathrooms (High to Low)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bedrooms">Bedrooms</label>
+                    <select id="bedrooms" class="filter-dropdown">
+                        <option value="">Any Number</option>
+                        <option value="studio">Studio</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                        <option value="5">5+</option>
+                        <option value="6">6+</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="baths">Baths</label>
+                    <select id="baths" class="filter-dropdown">
+                        <option value="">Any Number</option>
+                        <option value="studio">Studio</option>
+                        <option value="1">1+</option>
+                        <option value="2">2+</option>
+                        <option value="3">3+</option>
+                        <option value="4">4+</option>
+                        <option value="5">5+</option>
+                        <option value="6">6+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="min-price">Min Price</label>
+                    <input type="text" id="min-price" placeholder="Min Price" class="filter-input">
+                    <span class="error-msg">Please enter a valid number</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="max-price">Max Price</label>
+                    <input type="text" id="max-price" placeholder="Max Price" class="filter-input">
+                    <span class="error-msg">Please enter a valid number</span>
+                </div>
+
+                <div class="form-group button-group">
+                    <button class="search-btn">Search Now</button>
+                    <span class="error-msg">&nbsp;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Section -->
+
+    <div class="social-section">
+        <div class="social-row">
+            <span class="social-heading">Follow Us</span>
+            <span class="divider">|</span>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.yelp.com" target="_blank" class="social-icon">
+                    <i class="fab fa-yelp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Services Section -->
+
+    <div class="services-section">
+        <h1 class="services-header">Our Services</h1>
+
+        <div class="service-item">
+            <img src="Marci Metzger Assets/s1.webp" alt="Property Buying">
+            <div class="service-text">
+                <h3>Real Estate Done Right</h3>
+                <p>Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your
+                    residence, looking at investment properties, or just curious about the markets, our team ensures you
+                    get the best experience possible!</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="Marci Metzger Assets/s2.webp" alt="Property Selling">
+            <div class="service-text">
+                <h3>Commercial & Residential</h3>
+                <p>Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers?
+                    Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you
+                    find where to put you hard-earned dollars.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="Marci Metzger Assets/s3.webp" alt="Property Renting">
+            <div class="service-text">
+                <h3>Rely on Expertise</h3>
+                <p>If you have questions about affordability, credit, and loan options, trust us to connect you with the
+                    right people to get the answers you need in a timely fashion. We make sure you feel confident and
+                    educated every step of the way.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contact & Map Section -->
 
     <section class="contact-section" id="contact">
-        <h2 class="contact-title">Call or Visit</h2>
-        <div class="contact-container">
+        <h2 class="contact-title">Get in touch with us</h2>
 
-            <div class="contact-form">
-                <h3>Send Message</h3>
+        <div class="contact-container">
+            <div class="contact-left">
+                <div class="contact-image">
+                    <img src="Marci Metzger Assets/Marci.png" alt="Contact Image">
+                    <div class="thought-bubble">
+                        Realtor for nearly 3 decades!
+                    </div>
+                </div>
+                <h3>Contact Us</h3>
                 <form>
-                    <input type="text" name="name" placeholder="Name">
-                    <input type="email" name="email" placeholder="Email*" required>
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <button type="submit">SEND</button>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+
+                    <p class="recaptcha-note">
+                        This site is protected by reCAPTCHA and the
+                        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google
+                            Privacy Policy</a>
+                        and
+                        <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of
+                            Service</a>
+                        apply.
+                    </p>
+
                 </form>
-                <p class="recaptcha-note">
-                    This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
-                </p>
             </div>
 
-            <div class="contact-info">
-                <a class="whatsapp-btn" href="https://wa.me/12069196886" target="_blank">
-                    Message us on WhatsApp
-                </a>
-                <p><strong>Marci Metzger - THE RIDGE REALTY GROUP</strong></p>
-                <p>3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
-                <p>(206) 919-6886</p>
+            <div class="contact-right">
+                <div class="contact-right-info">
+                    <h3>Message us on WhatsApp</h3>
+                    <a class="whatsapp-btn" href="https://wa.me/12069196886" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <h4>Marci Metzger - THE RIDGE REALTY GROUP</h4>
+                    <p><strong>Address:</strong> 3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                    <p><strong>Phone:</strong> (206) 919-6886</p>
+                    <p><strong>Email:</strong> marci.metzger@example.com</p>
 
-                <h4>Office Hours</h4>
-                <p>Open today 08:00 am – 07:00 pm</p>
-                <p>Open daily 08:00 am – 07:00 pm</p>
-                <p>Appointments outside office hours available upon request. Just call!</p>
+                    <h4>Office Hours</h4>
+                    <p>Open today: 08:00 am – 07:00 pm</p>
+                    <p>Open daily: 08:00 am – 07:00 pm</p>
+                    <p>Appointments outside office hours available upon request. Just call!</p>
+                </div>
+
+                <div class="map-container" id="map" aria-label="Map showing 3190 HW-160, Suite F, Pahrump, NV 89048">
+                    <iframe src="https://www.google.com/maps?q=3190+HW-160+Suite+F+Pahrump+NV+89048&output=embed"
+                        loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+                        title="Map — 3190 HW-160, Suite F, Pahrump, NV 89048">
+                    </iframe>
+                </div>
+
             </div>
 
         </div>
     </section>
 
-
-    <!-- Map Section -->
-
-    <div class="map-container" id="map" aria-label="Map showing 3190 HW-160, Suite F, Pahrump, NV 89048">
-        <iframe src="https://www.google.com/maps?q=3190+HW-160+Suite+F+Pahrump+NV+89048&output=embed" loading="lazy"
-            allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-            title="Map — 3190 HW-160, Suite F, Pahrump, NV 89048">
-        </iframe>
-    </div>
-
     <!-- Footer Section -->
 
     <footer class="site-footer">
+        <div class="social-icons-footer">
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.yelp.com" target="_blank" class="social-icon">
+                <i class="fab fa-yelp"></i>
+            </a>
+        </div>
+
         <p>Copyright © 2023 Marci METZGER Homes - All Rights Reserved</p>
     </footer>
+
+
 
     <a class="btn" href="tel:+2069196886">
         <span class="btn-text-one">Call Now</span>
