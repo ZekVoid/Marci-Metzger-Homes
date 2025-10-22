@@ -11,12 +11,12 @@ window.addEventListener('scroll', () => {
 
 const track = document.querySelector('.partners-track');
 const logos = Array.from(track.children);
-const gap = 200;
+const gap = 200; 
 const speed = 0.5;
 
 const totalLogos = logos.length;
-for (let i = 0; i < totalLogos * 2; i++) {
-    const clone = logos[i % totalLogos].cloneNode(true);
+for (let i = 0; i < totalLogos; i++) {
+    const clone = logos[i].cloneNode(true);
     track.appendChild(clone);
 }
 
@@ -24,7 +24,8 @@ const allLogos = Array.from(track.children);
 
 let positions = [];
 let currentX = 0;
-allLogos.forEach((logo) => {
+
+allLogos.forEach((logo, index) => {
     positions.push(currentX);
     logo.style.left = currentX + 'px';
     currentX += logo.offsetWidth + gap;
@@ -46,6 +47,7 @@ function animate() {
 }
 
 animate();
+
 
 
 
