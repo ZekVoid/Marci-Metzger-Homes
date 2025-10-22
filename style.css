@@ -1010,3 +1010,208 @@ body {
     margin-top: 20px;
     font-size: 14px;
 }
+
+/* Tablet & Mobile Responsive */
+
+@media (max-width: 1024px) {
+    .media-title h1 {
+        font-size: 36px;
+    }
+
+    .media-title p {
+        font-size: 18px;
+    }
+
+    .navbar-container nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        padding: 60px 5%;
+    }
+
+    .intro-image {
+        margin-right: 0;
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .intro-image img {
+        max-width: 80%;
+    }
+
+    .intro-text {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .showcase {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 5%;
+    }
+
+    .showcase-image,
+    .showcase-text {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .showcase-text {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .gallery-left {
+        flex-direction: column;
+    }
+
+    .thumbnails-right {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .thumbnails-right img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .property-filter-form {
+        padding: 20px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .social-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .media-title h1 {
+        font-size: 28px;
+    }
+
+    .media-title p {
+        font-size: 16px;
+    }
+
+    .navbar-container nav ul {
+        gap: 15px;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .showcase-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .showcase-text p {
+        font-size: 1rem;
+    }
+
+    .gallery-header {
+        font-size: 2rem;
+    }
+
+    .wrapper-header {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 120px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .intro-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .property-filter-wrapper {
+        padding: 40px 10px;
+    }
+
+    .partners-track img {
+        height: 50px;
+    }
+
+    .service-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-left h3,
+    .contact-right-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-left input,
+    .contact-left textarea {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .contact-left button {
+        padding: 12px 24px;
+        font-size: 12px;
+    }
+
+    .thought-bubble {
+        top: 5px;
+        left: 65%;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .thought-bubble::after {
+        bottom: -15px;
+        border-width: 8px;
+    }
+}
